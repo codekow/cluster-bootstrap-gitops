@@ -1,6 +1,8 @@
 # Cluster Bootstrap
 
-This project is designed to bootstrap an OpenShift cluster with several operators and components that are utilized for Machine Learning.
+This project is still a work in progress.
+
+The intention is that this will allow you to easily bootstrap an OpenShift-GitOps instance to a new cluster which will then instantiate several operators on the cluster.
 
 ## Components
 
@@ -11,7 +13,6 @@ This repository will configure the following items.
 - AMQ-Streams Operator
 - Crunchy Postgres Operator
 - Elasticsearch Operator
-- Grafana Operator
 - OpenDataHub Operator
 - OpenShift Data Foundations Operator
 - OpenShift GitOps Operator
@@ -170,3 +171,6 @@ Resolution/Troubleshooting:
 - Validate that the Opator has successfully installed via the `Installed Operators` section of the OpenShift Web Console.
 - If the Operator has not installed, additional troubleshooting is required.
 - If the Operator has successfully installed, feel free to ignore the `Progressing` state and proceed.  `OLM` should reconcile the status after several minutes and Argo will update the state to `Healthy`.
+
+# Links
+- https://github.com/bitnami-labs/sealed-secrets/blob/main/docs/bring-your-own-certificates.md

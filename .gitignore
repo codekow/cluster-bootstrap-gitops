@@ -1,7 +1,6 @@
+generated/
+
 .idea/
-
-manifest.yaml
-
 venv/
 
 # Sealed secret key
